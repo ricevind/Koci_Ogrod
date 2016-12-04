@@ -1,0 +1,17 @@
+@media (max-width: map-get($breakPoints, lg)) {
+	#home {
+		header {
+			text-align: center;
+			line-height: inherit;
+		}
+		#logo{
+			display: block;
+			float: none;
+		}
+		nav {
+			margin-top: 1%;
+			float: none;
+		}
+	}
+
+}

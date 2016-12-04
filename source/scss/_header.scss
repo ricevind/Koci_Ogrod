@@ -18,6 +18,9 @@
 
 	nav {
 		float:right;
+		#menu-button {
+			display: none;
+	}
 
 		li{
 			display: inline-block;
@@ -59,8 +62,10 @@
 		}
 		.center {
 			margin: 0 auto;
-			width: 50%;
+			width: 70%;
 			margin-top:2rem;
+			display: table;
+			text-align: center;
 		}
 
 		.button {
