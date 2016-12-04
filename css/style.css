@@ -208,6 +208,7 @@ html {
 html, body {
   height: 100%;
   width: 100%;
+  min-height: 430px;
   font-family: "robotoRegular";
   background-color: #5ED5E5; }
   @media screen and (min-width: 0) {
