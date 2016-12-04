@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/*Zawiera style resetujące*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/*border-box*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/*butto type reset*/
+[type="submit"] {
+  background: none;
+  border: none;
+  font-size: 1em; }
+
+#home header {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 1rem 0;
+  position: relative; }
+
+#home #logo {
+  font-family: "Blenda", sans-serif;
+  font-size: 2.3rem;
+  color: #FDFDFD;
+  word-spacing: 1rem;
+  display: inline-block;
+  float: left; }
+
+#home nav {
+  float: right; }
+  #home nav li {
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    height: 1.2rem; }
+    #home nav li a {
+      text-decoration: none;
+      color: #FDFDFD;
+      font-size: 1rem;
+      font-family: "robotoRegular"; }
+
+#callToAction {
+  height: 70%;
+  margin-top: 3rem;
+  border: 10px #FDFDFD solid;
+  color: #FDFDFD;
+  position: relative; }
+  #callToAction .wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 3rem; }
+    #callToAction .wrapper h1 {
+      font-family: "slimJim";
+      font-size: 1.5rem; }
+    #callToAction .wrapper p {
+      font-family: "robotoRegular";
+      padding-top: 1rem; }
+    #callToAction .wrapper .center {
+      margin: 0 auto;
+      width: 50%;
+      margin-top: 2rem; }
+    #callToAction .wrapper .button {
+      color: #FDFDFD;
+      text-decoration: none;
+      text-align: center;
+      height: 2.5rem;
+      vertical-align: middle;
+      padding: 0 1.5rem;
+      display: table-cell;
+      border: 3px #FDFDFD solid;
+      border-radius: 32px; }
+      #callToAction .wrapper .button:hover {
+        box-shadow: -2px 3px 4px -3px #000; }
+
+#homeCat {
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  background: url("../images/cat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0; }
+
+.bold {
+  font-family: "fatJim"; }
+
+@font-face {
+  font-family: robotoRegular;
+  src: url(../fonts/Lato-Light.ttf); }
+
+@font-face {
+  font-family: robotoBold;
+  src: url(../fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: Blenda;
+  src: url(../fonts/Blenda.otf); }
+
+@font-face {
+  font-family: slimJim;
+  src: url(../fonts/SlimJoe.otf); }
+
+@font-face {
+  font-family: fatJim;
+  src: url(../fonts/BIGJOHN.otf); }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "robotoRegular";
+  background-color: #5ED5E5; }
+  @media screen and (min-width: 0) {
+    html, body {
+      font-size: 12px; } }
+  @media screen and (min-width: 576px) {
+    html, body {
+      font-size: 14px; } }
+  @media screen and (min-width: 768px) {
+    html, body {
+      font-size: 16px; } }
+  @media screen and (min-width: 992px) {
+    html, body {
+      font-size: 18px; } }
+  @media screen and (min-width: 1200px) {
+    html, body {
+      font-size: 20px; } }
+
+#home {
+  height: 100%;
+  width: 100%; }
+
+#home {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; }
+
+.funkyText {
+  font-family: "robotoRegular";
+  text-shadow: 1px 1px 3px black;
+  color: white; }

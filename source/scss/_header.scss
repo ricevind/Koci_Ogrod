@@ -1,0 +1,86 @@
+#home {
+	header {
+		width:100%;
+		height:3rem;
+		line-height: 3rem;
+		padding: 1rem 0;
+		position: relative;
+	}
+	#logo {
+		font-family: $logoFont, sans-serif;
+		font-size: 2.3rem;
+		color: $lightFont;
+		word-spacing: 1rem;
+
+		display: inline-block;
+		float: left;
+	}
+
+	nav {
+		float:right;
+
+		li{
+			display: inline-block;
+			padding-right: 0.5rem;
+			padding-left: 0.5rem;
+			height: 1.2rem;
+			a {
+				text-decoration: none;
+				color: $lightFont;
+				font-size: 1rem;
+				font-family: $font1;
+			}
+		}
+	}
+}
+
+#callToAction {
+	height: 70%;
+	margin-top:3rem;
+	border: 10px $lightFont solid;
+	color: $lightFont;
+	position:relative;
+
+
+	.wrapper {
+		@include centerBlock();
+		width: 50%;
+		padding: 3rem;
+		h1 {
+			font-family: $slimFont;
+			font-size: 1.5rem;
+		}
+
+		p {
+			font-family: $font1;
+			padding-top: 1rem;
+			// text-align: center;
+
+		}
+		.center {
+			margin: 0 auto;
+			width: 50%;
+			margin-top:2rem;
+		}
+
+		.button {
+			@include button();
+
+		}
+	}
+}
+
+#homeCat {
+	width:50%;
+	height:90%;
+	position: absolute;
+	background: url('../images/cat.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: 0;
+	right: 0;
+}
+
+.bold {
+	font-family: $fatFont;
+}

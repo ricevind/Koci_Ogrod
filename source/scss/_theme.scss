@@ -1,0 +1,80 @@
+// theme variables eg. fonts colors bp
+// colors
+$mainColor:#5ED5E5;
+$lightFont:#FDFDFD;
+$darkFont:#263747;
+$mainComplementaryColor:#F9CC7F;
+$secondaryColor:#77E1A4;
+//break Points
+$breakPoints:(
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$fontSizes:(
+	xs: 12px,
+ 	sm: 14px,
+ 	md: 16px,
+ 	lg: 18px,
+	xl: 20px
+);
+
+
+// fonts
+$font1: 'robotoRegular';
+$font2: 'robotoBold';
+$logoFont: 'Blenda';
+$slimFont: 'slimJim';
+$fatFont: 'fatJim';
+
+$urls: (
+	#{$font1}: '../fonts/Lato-Light.ttf',
+	#{$font2}: '../fonts/Roboto-Bold.ttf',
+	#{$logoFont}: '../fonts/Blenda.otf',
+	#{$slimFont}: '../fonts/SlimJoe.otf',
+	#{$fatFont}: '../fonts/BIGJOHN.otf'
+
+	);
+//typography mixins
+@mixin fonts($urls){
+	@each $font, $url in $urls {
+		@font-face{
+			font-family: $font;
+			src: url(#{$url});
+		}
+	}
+}
+
+@mixin baseFontSize($breakPoints, $fontSizes){
+	@each $bp, $bpValue in $breakPoints{
+		@media screen and (min-width: $bpValue){
+			font-size: map-get($fontSizes, $bp);
+		}
+	}
+}
+
+@mixin button(){
+	color: $lightFont;
+	text-decoration: none;
+	text-align: center;
+	height: 2.5rem;
+	vertical-align: middle;
+	padding: 0 1.5rem;
+	// width: 6rem;
+
+	display: table-cell;
+	border: 3px $lightFont solid;
+	border-radius: 32px;
+	&:hover {
+		box-shadow: -2px 3px 4px -3px #000;
+	}
+}
+
+@mixin centerBlock(){
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+}

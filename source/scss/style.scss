@@ -1,0 +1,43 @@
+@import '_theme';
+@import '_reset';
+@import '_header';
+
+@include fonts($urls);
+
+$debug: false;
+@if $debug{
+	body, div, article, section, h1, h2, h3, p, nav, ul, li {
+		outline: black 1px dashed;
+	}
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: $font1;
+	background-color: $mainColor;
+	@include baseFontSize($breakPoints, $fontSizes);
+
+}
+
+%fullHeight {
+	height:100%;
+	width:100%;
+}
+
+
+#home {
+	@extend %fullHeight;
+	width: 80%;
+	margin:0 auto;
+	position: relative;
+
+}
+
+.funkyText {
+	font-family: $font1;
+	// font-size: 0.9rem;
+	text-shadow: 1px 1px 3px black;
+	color: lighten($lightFont, 4%);
+}
+
+
